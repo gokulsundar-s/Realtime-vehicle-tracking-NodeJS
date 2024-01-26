@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Raise Issue</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="issue.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="margin: -2px; background: transparent;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hai"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="#" style="display:flex;">
+                    <img src="icon.png" alt="logo" style="height: 50px;">
+                    <h6 style="color: rgb(5, 18, 63); font-size: 17px;; font-weight: 600; padding: 10px;">GOVERNMENT OF HIMACHAL PRADESH</h6>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="hai">
+                <ul class="nav navbar-nav" style="float: right">
+                  <li><a href="home.html" style="color: rgb(5, 18, 63); font-size: 17px; font-weight: 600; padding: 30px;" onMouseOver="this.style.color='rgb(255, 128, 0)'" onMouseOut="this.style.color='rgb(5, 18, 63)'">Home</a></li>
+                  <li><a href="issue.html" style="color: rgb(255, 128, 0); font-size: 17px; font-weight: 600; padding: 30px;">Raise Issue</a></li>
+                  <li><a href="server.html" style="color: rgb(5, 18, 63); font-size: 17px; font-weight: 600; padding: 30px;" onMouseOver="this.style.color='rgb(255, 128, 0)'" onMouseOut="this.style.color='rgb(5, 18, 63)'">Server Login</a></li>                
+                  <li><a href="driver.html" style="color: rgb(5, 18, 63); font-size: 17px; font-weight: 600; padding: 30px;" onMouseOver="this.style.color='rgb(255, 128, 0)'" onMouseOut="this.style.color='rgb(5, 18, 63)'">Driver Login</a></li>                
+                  <li><a href="report.html" style="color: rgb(5, 18, 63); font-size: 17px; font-weight: 600; padding: 30px;" onMouseOver="this.style.color='rgb(255, 128, 0)'" onMouseOut="this.style.color='rgb(5, 18, 63)'">Report</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding-top:20px;">
+        <img src="logo1.png" style="height: 70px; float:left; padding-left: 320px;">
+        <img src="logo2.png" style="height: 70px; float:right; padding-right: 280px;">
+        <h6 style="color: rgb(5, 18, 63); font-size: 30px; text-align:center; font-weight: 700;">REAL-TIME VEHICLE TRACKING SYSTEM</h6>
+    </div><br>
+
+
+
+
+
+
+    <img src="alert.png" atl="bus logo" class="center" style="height: 100px; width:100px; text-align:center;"><br>
+    <form name="signupform">
+        <div class = "login">
+            <label style="color: rgb(5, 18, 63); font-size: 25px;">Raise an issue</label><br><br>
+            <input type="text" placeholder="NAME" class="inpbox" id="name"><br><br><br>
+            <input type="mail" placeholder="PHONE NUMBER" class="inpbox" id="email"><br><br><br>
+            <input type="text" placeholder="LOCATION" class="inpbox" id="msg"><br><br><br>
+            <input type="text" placeholder="BUS ROUTE NUMBER" class="inpbox" id="msg"><br><br><br>
+            <input type="text" placeholder="BUS NUMBER" class="inpbox" id="msg"><br><br><br>
+            <input type="text" placeholder="ISSUE MESSAGE" class="repbox" id="msg"><br><br><br>
+            <button class="lbutton" type="submit" onclick="validate()">SUBMIT</button><br><br>
+        </div>
+    </form>
+    
+</body>

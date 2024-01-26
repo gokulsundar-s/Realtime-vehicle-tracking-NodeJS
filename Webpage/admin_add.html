@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Admin - Add User</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="admin_add.css">
+    <script src="admin_add.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h6 style="color: rgb(5, 18, 63); font-size: 25px; text-align:center; font-weight: 700; padding-top: 10px;">REAL-TIME VEHICLE TRACKING SYSTEM - ADD USER</h6><br><br>
+
+    <form name="signupform">
+        <div class = "login">
+            <label style="color: rgb(5, 18, 63); font-size: 25px;">Driver Login</label><br><br>
+            <select name="division" id="division" class="inpbox">
+                <option value="" disabled selected hidden>Choose the division</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="East">East</option>
+                <option value="West">West</option>
+            </select><br><br><br>
+            <input type="text" placeholder="NAME" class="inpbox" id="name"><br><br><br>
+            <input type="tel" placeholder="PHONE NUMBER" class="inpbox" id="pno"><br><br><br>
+            <input type="text" placeholder="EMAIL" class="inpbox" id="mail"><br><br><br>
+
+            <button class="lbutton" type="submit" onclick="validate()">SUBMIT</button><br><br>
+
+            <h6 id="msg"></h6>
+</body>

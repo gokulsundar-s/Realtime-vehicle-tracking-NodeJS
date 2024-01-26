@@ -1,0 +1,77 @@
+.login{
+    text-align: center;
+}
+
+.inpbox{
+    width: 30%;     
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid  rgb(5, 18, 63);
+    font-family:"Archivo";
+    font-size:15px; 
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;           
+}
+
+.repbox{
+    width: 30%;  
+    height: 150px;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid  rgb(5, 18, 63);
+    font-family:"Archivo";
+    font-size:15px; 
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center; 
+    justify-content: center;          
+}
+
+.lbutton{
+    font-family:"Archivo";
+    font-size:15px;
+    line-height: 0.90;
+    text-align: center;
+    width: auto;   
+    padding: 10px 18px;  
+    margin: 10px 5px;
+    background-color:  rgb(5, 18, 63);   
+    width: 10%;  
+    color: White;   
+    padding: 15px;   
+    margin: 10px 0px;   
+    border: none; 
+    border-radius: 5px;      
+}
+
+.lbutton:hover {   
+    opacity: 0.9;   
+}  
+
+.locbutton{
+    font-family:"Archivo";
+    font-size:15px;
+    line-height: 0.90;
+    text-align: center;
+    width: auto;   
+    padding: 10px 10px;  
+    margin: 10px 5px;
+    background-color:  rgb(255, 255, 255);    
+    color: rgb(5, 18, 63);   
+    padding: 15px;   
+    margin: 10px 0px;   
+    border: 2px solid  rgb(5, 18, 63);
+    border-radius: 5px;      
+}
+
+.locbutton:hover {   
+    opacity: 0.9;   
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

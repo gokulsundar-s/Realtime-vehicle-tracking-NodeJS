@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Real-Time vehicle tracking system</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="bus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h6 style="color: rgb(5, 18, 63); font-size: 25px; text-align:center; font-weight: 700; padding-top: 10px;">REAL-TIME VEHICLE TRACKING SYSTEM - CHOOSE YOUR BUS</h6><br><br>
+
+    <form name="signupform">
+        <div class = "login">
+            <label style="color: rgb(5, 18, 63); font-size: 25px;">Choose the bus</label><br><br><br>
+            <select name="division" id="division" class="inpbox">
+                <option value="" disabled selected hidden>Choose the bus</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="East">East</option>
+                <option value="West">West</option>
+            </select><br><br><br>
+
+            <button class="lbutton" type="submit" onclick="validate()">SUBMIT</button><br><br>
+
+        </div>
+    </form>
+        
+
+</body>

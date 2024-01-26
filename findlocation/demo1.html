@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Location Retrieval</title>
+</head>
+<body>
+  <button id="retrieveLocation">Retrieve Location</button>
+  
+  <script>
+    document.getElementById('retrieveLocation').addEventListener('click', () => {
+      if ("geolocation" in navigator) {
+        // Retrieve the user's location
+        navigator.geolocation.getCurrentPosition(function(position) {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+            console.log(latitude);
+          // Send the location data to the server
+          fetch('http://10.1.32.66:8000/insert', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ latitude, longitude })
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Location data sent to server:', data);
+          })
+          .catch(error => {
+            console.error('Error sending location data:', error);
+          });
+        });
+      } else {
+        console.log('Geolocation is not available in this browser.');
+      }
+    });
+  </script>
+</body>
+</html>
